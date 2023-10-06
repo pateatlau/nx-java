@@ -11,3 +11,5 @@ Nx monorepo for Java (Springboot)
 - `nx affected --target:build --base=HEAD~1`: To build all the projects that have changed in last commit.
 - `nx affected --target:run --base=HEAD~1`: To run all the projects that have changed in last commit.
 - `nx graph --affected --base=HEAD~1`: Show dependency graph of all projects and highlight the projects that have changed in last commit.
+
+## TODO: More documentation will be added shortly...

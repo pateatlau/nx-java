@@ -1,0 +1,72 @@
+{
+  "name": "app-java-app-3-java-app-3",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./app/java-app-3/java-app-3/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nxrocks/nx-spring-boot:build",
+      "options": {
+        "root": "./app/java-app-3/java-app-3"
+      },
+      "dependsOn": [
+        "^install"
+      ],
+      "outputs": [
+        "{workspaceRoot}/./app/java-app-3/java-app-3/target"
+      ]
+    },
+    "install": {
+      "executor": "@nxrocks/nx-spring-boot:install",
+      "options": {
+        "root": "./app/java-app-3/java-app-3"
+      },
+      "outputs": [
+        "{workspaceRoot}/./app/java-app-3/java-app-3/target"
+      ]
+    },
+    "test": {
+      "executor": "@nxrocks/nx-spring-boot:test",
+      "options": {
+        "root": "./app/java-app-3/java-app-3"
+      },
+      "outputs": [
+        "{workspaceRoot}/./app/java-app-3/java-app-3/target"
+      ]
+    },
+    "clean": {
+      "executor": "@nxrocks/nx-spring-boot:clean",
+      "options": {
+        "root": "./app/java-app-3/java-app-3"
+      }
+    },
+    "run": {
+      "executor": "@nxrocks/nx-spring-boot:run",
+      "options": {
+        "root": "./app/java-app-3/java-app-3"
+      }
+    },
+    "serve": {
+      "executor": "@nxrocks/nx-spring-boot:serve",
+      "options": {
+        "root": "./app/java-app-3/java-app-3"
+      }
+    },
+    "build-image": {
+      "executor": "@nxrocks/nx-spring-boot:build-image",
+      "options": {
+        "root": "./app/java-app-3/java-app-3"
+      },
+      "outputs": [
+        "{workspaceRoot}/./app/java-app-3/java-app-3/target"
+      ]
+    },
+    "build-info": {
+      "executor": "@nxrocks/nx-spring-boot:build-info",
+      "options": {
+        "root": "./app/java-app-3/java-app-3"
+      }
+    }
+  },
+  "tags": []
+}

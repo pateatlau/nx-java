@@ -1,0 +1,62 @@
+{
+  "name": "java-app-2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./apps/java-app-2/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nxrocks/nx-spring-boot:build",
+      "options": {
+        "root": "./apps/java-app-2"
+      },
+      "dependsOn": ["^install"],
+      "outputs": ["{workspaceRoot}/./apps/java-app-2/target"]
+    },
+    "install": {
+      "executor": "@nxrocks/nx-spring-boot:install",
+      "options": {
+        "root": "./apps/java-app-2"
+      },
+      "outputs": ["{workspaceRoot}/./apps/java-app-2/target"]
+    },
+    "test": {
+      "executor": "@nxrocks/nx-spring-boot:test",
+      "options": {
+        "root": "./apps/java-app-2"
+      },
+      "outputs": ["{workspaceRoot}/./apps/java-app-2/target"]
+    },
+    "clean": {
+      "executor": "@nxrocks/nx-spring-boot:clean",
+      "options": {
+        "root": "./apps/java-app-2"
+      }
+    },
+    "run": {
+      "executor": "@nxrocks/nx-spring-boot:run",
+      "options": {
+        "root": "./apps/java-app-2"
+      }
+    },
+    "serve": {
+      "executor": "@nxrocks/nx-spring-boot:serve",
+      "options": {
+        "root": "./apps/java-app-2"
+      }
+    },
+    "build-image": {
+      "executor": "@nxrocks/nx-spring-boot:build-image",
+      "options": {
+        "root": "./apps/java-app-2"
+      },
+      "outputs": ["{workspaceRoot}/./apps/java-app-2/target"]
+    },
+    "build-info": {
+      "executor": "@nxrocks/nx-spring-boot:build-info",
+      "options": {
+        "root": "./apps/java-app-2"
+      }
+    }
+  },
+  "tags": []
+}

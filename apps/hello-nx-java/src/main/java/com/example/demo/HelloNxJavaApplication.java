@@ -8,7 +8,7 @@ public class HelloNxJavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HelloNxJavaApplication.class, args);
-		System.out.println("Hello Java");
+		System.out.println("Hello Java!");
 	}
 
 }

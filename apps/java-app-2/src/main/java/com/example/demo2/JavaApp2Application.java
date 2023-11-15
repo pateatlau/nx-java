@@ -10,7 +10,7 @@ public class JavaApp2Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JavaApp2Application.class, args);
-		System.out.println("Hello Java2!!");
+		System.out.println("Hello Java2!!!");
 	}
 
 		@GetMapping("/items")
